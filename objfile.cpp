@@ -141,9 +141,9 @@ for(int i = 0 ; i < tabVertices.size(); ++i){
   vx.clear() ;
   }
 
-  he1 = ExMesh->hedges[1] ;
-  he2 = ExMesh->hedges[2]; 
-  he3 = ExMesh->hedges[3] ; 
+  he1 = ExMesh->hedges[ExMesh->hedges.size()-1] ;
+  he2 = ExMesh->hedges[ExMesh->hedges.size()-2]; 
+  he3 = ExMesh->hedges[ExMesh->hedges.size()-3] ; 
 
   he1->heNext = he2 ; 
   he1->hePrev = he3 ; 
